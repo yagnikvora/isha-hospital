@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
+/* ===== ISHA HOSPITAL THEME TOKENS ===== */
+/* To rebrand: change only these CSS variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary brand color (maroon/burgundy) */
+  --color-primary: #8B1A1A;
+  --color-primary-dark: #6B1414;
+  --color-primary-light: #A52020;
+  --color-primary-bg: rgba(139, 26, 26, 0.9);
+  --color-image-tint: #84231cd5;
+
+  /* Hero gradient colors */
+  --color-hero-start: #F5E6D8;
+  --color-hero-middle: #F8EDE3;
+  --color-hero-end: #FAF4EF;
+
+  /* Hero image overlay gradients */
+  --color-hero-overlay-home-start: rgba(139, 26, 26, 0.80);
+  --color-hero-overlay-home-middle: rgba(139, 26, 26, 0.36);
+  --color-hero-overlay-home-end: rgba(139, 26, 26, 0.04);
+  --color-hero-overlay-page-start: rgba(139, 26, 26, 0.78);
+  --color-hero-overlay-page-middle: rgba(139, 26, 26, 0.38);
+  --color-hero-overlay-page-end: rgba(139, 26, 26, 0.06);
+
+  /* Backgrounds */
+  --color-secondary: #FFFFFF;
+  --color-accent: #FDF2F2;
+  --color-accent-warm: #FEF3E7;
+  --color-bg-light: #F9FAFB;
+  --color-surface-soft: #F2F2F2;
+
+  /* Text */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+  --color-text-light: #FFFFFF;
+
+  /* Borders & misc */
+  --color-border: #E5E7EB;
+  --color-border-light: #F3F4F6;
+
+  /* Top bar */
+  --color-topbar-text: #E31E25;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-bg: var(--color-primary-bg);
+  --color-image-tint: var(--color-image-tint);
+  --color-hero-start: var(--color-hero-start);
+  --color-hero-middle: var(--color-hero-middle);
+  --color-hero-end: var(--color-hero-end);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-accent-warm: var(--color-accent-warm);
+  --color-bg-light: var(--color-bg-light);
+  --color-surface-soft: var(--color-surface-soft);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-light: var(--color-text-light);
+  --color-border: var(--color-border);
+  --color-border-light: var(--color-border-light);
+  --color-topbar-text: var(--color-topbar-text);
+  --font-sans: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-secondary);
+  color: var(--color-text-primary);
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Shared hero overlays for consistent page gradients */
+.hero-overlay-home {
+  background: linear-gradient(
+    90deg,
+    var(--color-hero-overlay-home-start) 0%,
+    var(--color-hero-overlay-home-middle) 48%,
+    var(--color-hero-overlay-home-end) 100%
+  );
+}
+
+.hero-overlay-page {
+  background: linear-gradient(
+    180deg,
+    var(--color-hero-overlay-page-start) 0%,
+    var(--color-hero-overlay-page-middle) 52%,
+    var(--color-hero-overlay-page-end) 100%
+  );
+}
+
+/* Smooth scroll */
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar UI but keep scrolling enabled */
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
