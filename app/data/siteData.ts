@@ -24,34 +24,83 @@ export const heroData = {
   secondaryCTA: { label: "Learn More", href: "/about" },
 };
 
+export const homeAboutSection = {
+  subtitle: "About Us",
+  title: "Compassionate Care, Trusted Medical Excellence",
+  description:
+    "We are committed to delivering high-quality healthcare with compassion, safety, and trust at the center of every treatment. Our experienced medical team provides personalized care, advanced medical support, and a patient-first approach to help every individual recover with confidence and comfort.",
+  feature: {
+    title: "Quality Healthcare",
+    description:
+      "Advanced treatments, experienced doctors, and dedicated support for every patient.",
+  },
+  metrics: [
+    {
+      title: "1000 +",
+      label: "Patients Recovered",
+      icon: "patients",
+    },
+    {
+      title: "5000 +",
+      label: "Successful Consultations",
+      icon: "clock",
+    },
+    {
+      title: "4.9/5",
+      label: "Satisfaction Rating",
+      icon: "heart",
+    },
+  ],
+};
+
 export const services = [
   {
     id: 1,
-    title: "Comprehensive Care",
+    title: "Heart Disease",
     description:
-      "Complete healthcare solutions tailored to your individual needs with our team of experienced medical professionals.",
-    image: "/images/services/comprehensive-care.jpg",
+      "Specialized cardiac diagnosis and treatment for better heart health.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Heart%20Disease).png",
   },
   {
     id: 2,
-    title: "Trusted Medical Excellence",
+    title: "Lung Disease",
     description:
-      "Our commitment to medical excellence ensures you receive the highest quality treatment and care available.",
-    image: "/images/services/medical-excellence.jpg",
+      "Expert respiratory care for healthy breathing and improved comfort.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Lung%20Disease).jpg",
   },
   {
     id: 3,
-    title: "Advanced Diagnostics",
+    title: "Liver Disease",
     description:
-      "State-of-the-art diagnostic equipment and technology for accurate and timely medical assessments.",
-    image: "/images/services/advanced-diagnostics.jpg",
+      "Comprehensive liver treatment with advanced medical support.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Liver%20Disease).jpg",
   },
   {
     id: 4,
-    title: "Patient-Centered Approach",
+    title: "Blood Disease",
     description:
-      "We put patients first, ensuring personalized attention and care throughout your healthcare journey.",
-    image: "/images/services/patient-centered.jpg",
+      "Personalized solutions for blood disorders and related conditions.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Blood%20Disease).jpg",
+  },
+  {
+    id: 5,
+    title: "Brain Disease",
+    description:
+      "Trusted neurological care for brain and nervous system health.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Brain%20Disease).jpg",
+  },
+  {
+    id: 6,
+    title: "Kidney Disease",
+    description:
+      "Complete kidney treatment focused on long-term wellness and recovery.",
+    image:
+      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Kidney%20Disease).jpg",
   },
 ];
 
@@ -88,23 +137,27 @@ export const testimonials = [
 export const careSteps = [
   {
     step: 1,
-    title: "Book Appointment",
-    description: "Schedule your visit online or by phone at your convenience.",
+    title: "Clinical Intake & Health History",
+    description:
+      "We begin by understanding your medical history and current health condition.",
   },
   {
     step: 2,
-    title: "Meet Our Doctors",
-    description: "Consult with our experienced specialists for expert diagnosis.",
+    title: "Multidisciplinary Patient Review",
+    description:
+      "Our specialists carefully review your case to recommend the right care.",
   },
   {
     step: 3,
-    title: "Get Treatment",
-    description: "Receive personalized treatment plans tailored to your needs.",
+    title: "Personalised Treatment",
+    description:
+      "A personalized treatment plan is created based on your specific needs.",
   },
   {
     step: 4,
-    title: "Recovery & Care",
-    description: "Ongoing support and follow-up care for complete recovery.",
+    title: "Outcome Evaluation & Preventive",
+    description:
+      "We monitor your progress and support your long-term health and recovery.",
   },
 ];
 

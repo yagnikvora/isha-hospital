@@ -33,6 +33,7 @@
   --color-contact-card-bg: #ECEFF3;
   --color-contact-input-bg: #F7F8FA;
   --color-contact-shadow: rgba(0, 0, 0, 0.12);
+  --color-process-card-overlay: rgba(227, 30, 37, 0.82);
 
   /* Text */
   --color-text-primary: #1A1A1A;
@@ -66,6 +67,7 @@
   --color-contact-card-bg: var(--color-contact-card-bg);
   --color-contact-input-bg: var(--color-contact-input-bg);
   --color-contact-shadow: var(--color-contact-shadow);
+  --color-process-card-overlay: var(--color-process-card-overlay);
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-muted: var(--color-text-muted);
