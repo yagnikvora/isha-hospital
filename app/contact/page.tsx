@@ -18,17 +18,16 @@ export default function ContactPage() {
         description="Reach out to our team for appointments, medical assistance, and any healthcare-related inquiries."
       />
 
-      {/* Contact Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-10 md:px-10">
+          <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1.08fr_1fr] lg:gap-14">
             <ContactInfo />
             <ContactForm />
           </div>
+      <MapSection />
         </div>
       </section>
 
-      <MapSection />
     </>
   );
 }

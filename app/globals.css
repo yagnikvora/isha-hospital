@@ -29,6 +29,10 @@
   --color-accent-warm: #FEF3E7;
   --color-bg-light: #F9FAFB;
   --color-surface-soft: #F2F2F2;
+  --color-contact-section-bg: #F3F3F3;
+  --color-contact-card-bg: #ECEFF3;
+  --color-contact-input-bg: #F7F8FA;
+  --color-contact-shadow: rgba(0, 0, 0, 0.12);
 
   /* Text */
   --color-text-primary: #1A1A1A;
@@ -58,6 +62,10 @@
   --color-accent-warm: var(--color-accent-warm);
   --color-bg-light: var(--color-bg-light);
   --color-surface-soft: var(--color-surface-soft);
+  --color-contact-section-bg: var(--color-contact-section-bg);
+  --color-contact-card-bg: var(--color-contact-card-bg);
+  --color-contact-input-bg: var(--color-contact-input-bg);
+  --color-contact-shadow: var(--color-contact-shadow);
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-muted: var(--color-text-muted);
@@ -65,14 +73,14 @@
   --color-border: var(--color-border);
   --color-border-light: var(--color-border-light);
   --color-topbar-text: var(--color-topbar-text);
-  --font-sans: var(--font-poppins);
+  --font-sans: var(--font-noto-sans);
 }
 
 /* Base styles */
 body {
   background: var(--color-secondary);
   color: var(--color-text-primary);
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-noto-sans), sans-serif;
 }
 
 /* Shared hero overlays for consistent page gradients */

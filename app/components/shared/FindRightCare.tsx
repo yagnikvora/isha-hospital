@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FindRightCare() {
   return (
-    <section className="relative z-[99] bg-secondary px-3 pb-0 pt-7 sm:px-4 sm:pt-8">
+    <section className="relative z-[99] bg-secondary px-1 pb-0 pt-7 sm:px-2 sm:pt-8">
       <div className="mx-auto max-w-[1460px]">
         <div className="relative mx-auto -mb-[100px] max-w-[820px] overflow-visible rounded-[14px] border border-primary/25 bg-surface-soft shadow-[0_10px_30px_rgba(0,0,0,0.11)]">
           <div className="relative grid grid-cols-1 items-end md:grid-cols-[1.08fr_0.92fr]">

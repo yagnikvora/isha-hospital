@@ -6,7 +6,7 @@ import Navbar from "../layout/Navbar";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-primary mx-5 sm:mx-8 lg:mx-12 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
+    <section className="relative overflow-hidden bg-primary mx-5 sm:mx-8 lg:mx-5 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
       {/* Background image with overlay */}
       <div className="absolute inset-0 rounded-[1.25rem] lg:rounded-[1.5rem] overflow-hidden">
         <Image

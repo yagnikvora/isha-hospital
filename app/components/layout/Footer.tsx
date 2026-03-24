@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <>
       <FindRightCare />
-      <footer className="bg-secondary px-3 pb-3 pt-0 sm:px-4 sm:pb-4">
-        <div className="relative mx-auto max-w-[1460px] overflow-hidden rounded-[14px] bg-primary text-text-light">
+      <footer className="bg-secondary pb-3 pt-0 sm:px-2 sm:pb-4">
+        <div className="relative mx-4 sm:mx-8 lg:mx-5 overflow-hidden rounded-[14px] bg-primary text-text-light">
         <Image
           src="/images/common/Footer & Faq & Why Choose Us background Image.png"
           alt="Footer background"

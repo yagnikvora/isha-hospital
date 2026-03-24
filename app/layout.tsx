@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/layout/TopBar";
 import Footer from "./components/layout/Footer";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   },
   description:
     "Isha Hospital provides compassionate, full-service healthcare with modern technology. Expert doctors, comprehensive care, and trusted medical excellence.",
+  icons: {
+    icon: "/Logo (1).svg",
+    shortcut: "/Logo (1).svg",
+    apple: "/Logo (1).svg",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} antialiased`}>
+    <html lang="en" className={`${notoSans.variable} antialiased`}>
       <body className="min-h-screen flex flex-col">
         <TopBar />
         <main className="flex-1">{children}</main>
