@@ -61,14 +61,14 @@ export default function HomeProcessSection() {
                   </div>
 
                   <div className="relative flex h-full flex-col">
-                    <div className="flex items-center gap-3">
-                      <span className="text-[48px] font-bold leading-none text-topbar-text transition-colors duration-300 group-hover:text-text-light/90">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[38px] font-bold leading-none text-topbar-text transition-colors duration-300 group-hover:text-text-light/90">
                         {String(step.step).padStart(2, "0")}
                       </span>
                       <span className="h-[2px] w-12 bg-topbar-text transition-colors duration-300 group-hover:bg-text-light/90" />
                     </div>
 
-                    <h3 className="mt-4 text-[18px] font-semibold leading-snug sm:text-[20px]">
+                    <h3 className="mt-4 text-[18px] font-bold">
                       {step.title}
                     </h3>
                     <p className="mt-2 text-[13px] leading-[1.65] text-text-secondary transition-colors duration-300 group-hover:text-text-light/90">

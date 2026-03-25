@@ -2,6 +2,7 @@ import HeroSection from "./components/home/HeroSection";
 import HomeAboutSection from "./components/home/HomeAboutSection";
 import ServicesCards from "./components/home/ServicesCards";
 import HomeProcessSection from "./components/home/HomeProcessSection";
+import WhyChooseUsSection from "./components/home/WhyChooseUsSection";
 import TestimonialsSection from "./components/home/TestimonialsSection";
 import HealthPartnerStats from "./components/shared/HealthPartnerStats";
 import AchievementsSection from "./components/home/AchievementsSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <HomeAboutSection />
       <ServicesCards />
       <HomeProcessSection />
+      <WhyChooseUsSection />
       <TestimonialsSection />
       <HealthPartnerStats />
       <AchievementsSection />

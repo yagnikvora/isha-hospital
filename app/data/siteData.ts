@@ -1,7 +1,7 @@
 export const contactInfo = {
   phone: "0281 - 2708266",
   mobile: "93287 74077",
-  email: "info@ishahospitals.com",
+  email: "ishahospitalrajkot@gmail.com",
   address: "5 - Jay Bhojalaram, Opp. Kailash Marble, Saint Kabir Road, Rajkot",
   workingHours: {
     morning: "10:00am - 1:00pm",
@@ -158,6 +158,62 @@ export const careSteps = [
     title: "Outcome Evaluation & Preventive",
     description:
       "We monitor your progress and support your long-term health and recovery.",
+  },
+];
+
+export const whyChooseUsSection = {
+  subtitle: "Why Choose Us",
+  title: "The Health Partner You\u2019ve Been Looking For",
+};
+
+export const whyChooseUsFeatures = [
+  {
+    id: 1,
+    side: "left",
+    title: "Family-Centred Care",
+    description:
+      "Personalized healthcare solutions designed for individuals and families of all ages.",
+    icon: "/svgs/why_choose_us/Family_Centred_Care.svg",
+  },
+  {
+    id: 2,
+    side: "left",
+    title: "Advanced Medical Technology",
+    description:
+      "Modern equipment and innovative treatment methods for accurate and effective care.",
+    icon: "/svgs/why_choose_us/Advanced_Medical_Technology.svg",
+  },
+  {
+    id: 3,
+    side: "left",
+    title: "Transparent, Wallet-Friendly Pricing",
+    description:
+      "Quality medical care with clear pricing and no hidden surprises.",
+    icon: "/svgs/why_choose_us/Transparent_Wallet_Friendly_Pricing.svg",
+  },
+  {
+    id: 4,
+    side: "right",
+    title: "Fast Diagnosis and Reliable Results",
+    description:
+      "Quick assessments and trusted treatment plans to support timely recovery.",
+    icon: "/svgs/why_choose_us/Fast_Diagnosis_and_Reliable_Results.svg",
+  },
+  {
+    id: 5,
+    side: "right",
+    title: "Compassionate Patient Experience",
+    description:
+      "A caring environment focused on respect, comfort, and patient well-being.",
+    icon: "/svgs/why_choose_us/Compassionate_Patient_Experience.svg",
+  },
+  {
+    id: 6,
+    side: "right",
+    title: "Health Education For All",
+    description:
+      "Empowering every community with accessible knowledge for healthier lives.",
+    icon: "/svgs/why_choose_us/Health_Education_For_All.svg",
   },
 ];
 

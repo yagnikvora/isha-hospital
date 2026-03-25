@@ -14,6 +14,7 @@ type NavbarProps = {
 export default function Navbar({ embedded = false, className = "" }: NavbarProps) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const isContactPage = pathname === "/contact";
 
   const navClass = embedded
     ? "relative z-30"
@@ -66,13 +67,15 @@ export default function Navbar({ embedded = false, className = "" }: NavbarProps
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              href="/contact"
-              className="bg-topbar-text text-text-light px-6 py-4 rounded-full text-sm font-semibold hover:bg-primary transition-all"
-            >
-              Get In Touch
-            </Link>
+          <div className="hidden md:block min-w-[166px]">
+            {!isContactPage && (
+              <Link
+                href="/contact"
+                className="bg-topbar-text text-text-light px-6 py-4 rounded-full text-sm font-semibold hover:bg-primary transition-all"
+              >
+                Get In Touch
+              </Link>
+            )}
           </div>
 
           {/* Mobile Hamburger */}
@@ -137,13 +140,15 @@ export default function Navbar({ embedded = false, className = "" }: NavbarProps
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="block bg-topbar-text text-text-light px-7 py-3 rounded-full text-sm font-semibold text-center mt-4"
-            >
-              Get In Touch
-            </Link>
+            {!isContactPage && (
+              <Link
+                href="/contact"
+                onClick={() => setMobileOpen(false)}
+                className="block bg-topbar-text text-text-light px-7 py-3 rounded-full text-sm font-semibold text-center mt-4"
+              >
+                Get In Touch
+              </Link>
+            )}
           </div>
         </div>
       )}

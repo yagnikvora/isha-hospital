@@ -22,19 +22,40 @@ export default function ContactForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
+    const subject = formData.subject || "Contact from Website";
+
     const body = [
-      `Name: ${formData.name}`,
-      `Phone: ${formData.phone}`,
+      "Hello Isha Hospital Team,",
       ``,
+      "I am contacting you through your website contact form. Please find my details below:",
+      ``,
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone || "Not provided"}`,
+      `Subject: ${subject}`,
+      ``,
+      "My message:",
       formData.message,
+      ``,
+      "Please get back to me at your earliest convenience.",
+      "",
+      "Thank you.",
+      `${formData.name}`,
     ].join("\n");
 
-    const mailtoUrl =
-      `mailto:${contactInfo.email}` +
-      `?subject=${encodeURIComponent(formData.subject || "Contact from Website")}` +
+    const gmailComposeUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contactInfo.email)}` +
+      `&su=${encodeURIComponent(subject)}` +
       `&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailtoUrl;
+    const openedWindow = window.open(gmailComposeUrl, "_blank", "noopener,noreferrer");
+    if (!openedWindow) {
+      const mailtoUrl =
+        `mailto:${contactInfo.email}` +
+        `?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    }
   };
 
   // Light grey input matching the design
