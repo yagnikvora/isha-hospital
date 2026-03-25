@@ -228,6 +228,40 @@ export const homeVisionMissionSection = {
     "To provide high-quality healthcare through skilled professionals, modern technology, compassionate service, and a strong commitment to patient safety, comfort, and long-term well-being.",
 };
 
+export const doctorsStaffSection = {
+  subtitle: "Doctor & Staff",
+  title: "Expert Doctor & Staff Team",
+  highlights: [
+    {
+      value: "2000+",
+      label: "Patients Treated",
+      icon: "/Patients_Treated.svg",
+    },
+    {
+      value: "1000+",
+      label: "Successful Procedures",
+      icon: "/Successful_Procedures.svg",
+    },
+    {
+      value: "15+",
+      label: "Years of Experience",
+      icon: "/Years_of_Experience.svg",
+    },
+  ],
+  doctors: [
+    {
+      name: "Dr. Kamal Bhatt",
+      qualification: "M.D. Medicine",
+      image: "/images/doctors/Homepage_Doctor_Kamal_Bhatt.png",
+    },
+    {
+      name: "Dr. Sudhaben Bhatt",
+      qualification: "M.D. Ayurveda",
+      image: "/images/doctors/Homepage_Doctor_Sudhaben_Bhatt.png",
+    },
+  ],
+};
+
 export const stats = [
   { label: "Years Experience", value: 25, suffix: "+" },
   { label: "Happy Patients", value: 15000, suffix: "+" },
