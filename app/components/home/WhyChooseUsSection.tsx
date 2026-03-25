@@ -18,7 +18,7 @@ const rightFeatures = whyChooseUsFeatures.filter(
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="relative overflow-hidden bg-accent pt-10 pb-0 md:pt-14 md:pb-0 lg:pt-16 lg:pb-0">
+    <section className="relative overflow-hidden bg-accent pt-10 pb-5 md:pt-14 md:pb-0 lg:pt-16 lg:pb-0">
       <Image
         src={sectionBackgroundImage}
         alt=""

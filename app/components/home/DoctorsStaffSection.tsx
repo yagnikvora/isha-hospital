@@ -4,7 +4,7 @@ import FadeIn from "../animations/FadeIn";
 
 export default function DoctorsStaffSection() {
   return (
-    <section className="bg-surface-soft pb-16 pt-8 sm:pb-18 sm:pt-10 lg:pb-20 lg:pt-40">
+    <section className="pb-16 sm:pb-18 sm:pt-10 lg:pb-20 lg:pt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="mx-auto flex max-w-[720px] flex-wrap items-center justify-center gap-x-9 gap-y-5 sm:gap-x-12">

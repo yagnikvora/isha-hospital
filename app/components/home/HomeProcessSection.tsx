@@ -7,7 +7,7 @@ import FadeIn from "../animations/FadeIn";
 import StaggerChildren, { staggerItem } from "../animations/StaggerChildren";
 
 const processCardBackgroundImage =
-  "/images/common/Homepage(Process%20Section%20Card%20Background%20Image).png";
+  "/images/common/Homepage_Process_Section_Card_Background_Image.png";
 
 export default function HomeProcessSection() {
   return (
@@ -30,7 +30,7 @@ export default function HomeProcessSection() {
 
             <div className="relative mt-8 h-[210px] w-full max-w-[560px] self-center sm:h-[240px] lg:mt-8 lg:h-[265px] lg:self-start">
               <Image
-                src="/images/common/Homepage%20%26%20Contact%20Us(Process%20Section).png"
+                src="/images/common/Homepage_Contact_Us_Process_Section.png"
                 alt="Medical team supporting patient care process"
                 fill
                 className="object-contain"
