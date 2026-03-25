@@ -10,7 +10,7 @@ export default function Footer() {
       <footer className="bg-secondary pb-3 pt-0 sm:px-2 sm:pb-4">
         <div className="relative mx-4 sm:mx-8 lg:mx-5 overflow-hidden rounded-[14px] bg-primary text-text-light">
         <Image
-          src="/images/common/Footer & Faq & Why Choose Us background Image.png"
+          src="/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.png"
           alt="Footer background"
           fill
           priority={false}

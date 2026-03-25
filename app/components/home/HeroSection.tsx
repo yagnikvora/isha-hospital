@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0 rounded-[1.25rem] lg:rounded-[1.5rem] overflow-hidden">
         <Image
-          src="/images/common/Homepage(Hero Section Background).png"
+          src="/images/common/Homepage_Hero_Section_Background.png"
           alt="Hospital Background"
           fill
           className="object-cover"
@@ -108,7 +108,7 @@ export default function HeroSection() {
               {/* Doctor Image */}
               <div className="relative w-full h-[470px] sm:h-[520px] lg:h-[590px] xl:h-[640px] ml-4 lg:ml-8">
                 <Image
-                  src="/images/common/Homepage(HeroSection).png"
+                  src="/images/common/Homepage_HeroSection.png"
                   alt="Doctor at Isha Hospital"
                   fill
                   className="object-contain object-bottom"

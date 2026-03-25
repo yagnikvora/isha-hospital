@@ -125,7 +125,7 @@ export default function ContactInfo() {
         <div className="relative w-full overflow-hidden">
           <div className="relative w-full [mask-image:linear-gradient(to_bottom,black_76%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_76%,transparent_100%)]">
             <Image
-              src="/images/common/Homepage & Contact Us(Process Section).png"
+              src="/images/common/Homepage_Contact_Us_Process_Section.png"
               alt="Our Medical Team"
               width={1100}
               height={620}

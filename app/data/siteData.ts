@@ -60,7 +60,7 @@ export const services = [
     description:
       "Specialized cardiac diagnosis and treatment for better heart health.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Heart%20Disease).png",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Heart_Disease.png",
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ export const services = [
     description:
       "Expert respiratory care for healthy breathing and improved comfort.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Lung%20Disease).jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Lung_Disease.jpg",
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const services = [
     description:
       "Comprehensive liver treatment with advanced medical support.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Liver%20Disease).jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Liver_Disease.jpg",
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const services = [
     description:
       "Personalized solutions for blood disorders and related conditions.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Blood%20Disease).jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Blood_Disease.jpg",
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ export const services = [
     description:
       "Trusted neurological care for brain and nervous system health.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Brain%20Disease).jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Brain_Disease.jpg",
   },
   {
     id: 6,
@@ -100,7 +100,7 @@ export const services = [
     description:
       "Complete kidney treatment focused on long-term wellness and recovery.",
     image:
-      "/images/services/Homepage(Our%20Medical%20Treatments%20Section%20-%20Kidney%20Disease).jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Kidney_Disease.jpg",
   },
 ];
 
