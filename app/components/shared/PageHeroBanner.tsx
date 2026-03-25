@@ -14,7 +14,7 @@ export default function PageHeroBanner({
   breadcrumbs,
 }: PageHeroBannerProps) {
   return (
-    <section className="relative bg-primary overflow-hidden mx-5 sm:mx-8 lg:mx-12 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
+    <section className="relative bg-primary overflow-hidden mx-2 sm:mx-8 lg:mx-5 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
       <div className="absolute inset-0">
         <Image
           src="/images/common/AboutUs_and_Contact_Us_Hero_Section_Background.png"

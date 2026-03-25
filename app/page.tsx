@@ -3,6 +3,7 @@ import HomeAboutSection from "./components/home/HomeAboutSection";
 import ServicesCards from "./components/home/ServicesCards";
 import HomeProcessSection from "./components/home/HomeProcessSection";
 import WhyChooseUsSection from "./components/home/WhyChooseUsSection";
+import VisionMissionSection from "./components/home/VisionMissionSection";
 import TestimonialsSection from "./components/home/TestimonialsSection";
 import HealthPartnerStats from "./components/shared/HealthPartnerStats";
 import AchievementsSection from "./components/home/AchievementsSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <ServicesCards />
       <HomeProcessSection />
       <WhyChooseUsSection />
+      <VisionMissionSection />
       <TestimonialsSection />
       <HealthPartnerStats />
       <AchievementsSection />

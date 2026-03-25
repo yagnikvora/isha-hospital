@@ -217,6 +217,17 @@ export const whyChooseUsFeatures = [
   },
 ];
 
+export const homeVisionMissionSection = {
+  subtitle: "Vision & Mission",
+  title: "Transforming Healthcare A Empathetic Innovation Vision & Mission",
+  visionTitle: "Vision",
+  vision:
+    "To become a trusted healthcare provider known for delivering accessible, advanced, and patient-centered medical care that improves lives and builds healthier communities.",
+  missionTitle: "Mission",
+  mission:
+    "To provide high-quality healthcare through skilled professionals, modern technology, compassionate service, and a strong commitment to patient safety, comfort, and long-term well-being.",
+};
+
 export const stats = [
   { label: "Years Experience", value: 25, suffix: "+" },
   { label: "Happy Patients", value: 15000, suffix: "+" },
