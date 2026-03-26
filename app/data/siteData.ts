@@ -266,6 +266,42 @@ export const aboutOurValuesSection = {
   ],
 };
 
+export const aboutTestimonialsSection = {
+  subtitle: "Testimonials",
+  title: "What Patients Say About Us",
+  description:
+    "Hear from patients who trust our team for compassionate care, professional treatment, and a comfortable healthcare experience.",
+  cards: [
+    {
+      id: 1,
+      name: "Paresh",
+      role: "Patients",
+      quote:
+        "The doctors were kind, attentive, and made me feel comfortable throughout my treatment. I truly felt cared for at every step.",
+      rating: 5,
+      featured: false,
+    },
+    {
+      id: 2,
+      name: "Vijay",
+      role: "Patients",
+      quote:
+        "I received quick diagnosis, clear guidance, and excellent support from the medical team. Their care gave me confidence and peace of mind.",
+      rating: 4,
+      featured: true,
+    },
+    {
+      id: 3,
+      name: "vikrant",
+      role: "Patients",
+      quote:
+        "The staff was professional, friendly, and always ready to help. My overall experience was smooth, reassuring, and highly satisfying.",
+      rating: 5,
+      featured: false,
+    },
+  ],
+};
+
 export const doctorsStaffSection = {
   subtitle: "Doctor & Staff",
   title: "Expert Doctor & Staff Team",

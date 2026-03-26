@@ -4,6 +4,8 @@ import HomeAboutSection from "../components/home/HomeAboutSection";
 import VisionMissionSection from "../components/home/VisionMissionSection";
 import WhyChooseUsSection from "../components/home/WhyChooseUsSection";
 import OurValuesSection from "../components/about/OurValuesSection";
+import TestimonialsSection from "../components/about/TestimonialsSection";
+import HomeHelpCtaSection from "../components/home/HomeHelpCtaSection";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -22,6 +24,9 @@ export default function AboutPage() {
       <VisionMissionSection />
       <WhyChooseUsSection />
       <OurValuesSection />
+      <TestimonialsSection />
+      <HomeHelpCtaSection />
+      
     </>
   );
 }
