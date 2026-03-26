@@ -228,6 +228,44 @@ export const homeVisionMissionSection = {
     "To provide high-quality healthcare through skilled professionals, modern technology, compassionate service, and a strong commitment to patient safety, comfort, and long-term well-being.",
 };
 
+export const aboutOurValuesSection = {
+  subtitle: "Our Value",
+  title: "We Deliver Care That Truly Sets Us Apart",
+  description:
+    "Our commitment goes beyond treatment by combining medical expertise, advanced technology, compassionate support, and transparent care to create a better experience for every patient.",
+  cards: [
+    {
+      id: 1,
+      title: "Care for the Whole Family",
+      description: "Complete care for every age and stage.",
+      icon: "/svgs/Our_values/Care_for_the_Whole_Family.svg",
+      highlighted: false,
+    },
+    {
+      id: 2,
+      title: "Rapid, Reliable Results",
+      description: "Fast diagnosis with trusted outcomes.",
+      icon: "/svgs/Our_values/Rapid_Reliable_Results.svg",
+      highlighted: false,
+    },
+    {
+      id: 3,
+      title: "Advanced Medical Technology",
+      description: "Modern tools for accurate treatment.",
+      icon: "/svgs/Our_values/Advanced_Medical_Technologies.svg",
+      highlighted: false,
+    },
+    {
+      id: 4,
+      title: "Transparent Pricing",
+      description:
+        "Clear and honest pricing that helps patients access quality care with confidence.",
+      icon: "/svgs/Our_values/Transparent_Pricing.svg",
+      highlighted: false,
+    },
+  ],
+};
+
 export const doctorsStaffSection = {
   subtitle: "Doctor & Staff",
   title: "Expert Doctor & Staff Team",

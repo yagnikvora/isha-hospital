@@ -6,7 +6,7 @@ import SlideIn from "../animations/SlideIn";
 export default function VisionMissionSection() {
   return (
     <section className="pt-0 pb-12 sm:pb-14 lg:pb-33">
-      <div className="relative mx-3 w-auto rounded-t-2xl bg-primary px-6 py-14 sm:px-10 lg:pl-28 lg:pr-20 lg:py-16 xl:pl-65 xl:pr-24">
+      <div className="relative mx-4 w-auto rounded-b-2xl bg-primary px-6 py-14 sm:px-10 lg:pl-28 lg:pr-20 lg:py-16 xl:pl-65 xl:pr-24">
         <FadeIn className="text-text-light lg:pr-[58%]">
           <p className="text-sm font-semibold tracking-wide text-text-light/90">
             {homeVisionMissionSection.subtitle}

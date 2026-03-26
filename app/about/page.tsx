@@ -3,6 +3,7 @@ import PageHeroBanner from "../components/shared/PageHeroBanner";
 import HomeAboutSection from "../components/home/HomeAboutSection";
 import VisionMissionSection from "../components/home/VisionMissionSection";
 import WhyChooseUsSection from "../components/home/WhyChooseUsSection";
+import OurValuesSection from "../components/about/OurValuesSection";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -20,6 +21,7 @@ export default function AboutPage() {
       <HomeAboutSection />
       <VisionMissionSection />
       <WhyChooseUsSection />
+      <OurValuesSection />
     </>
   );
 }
