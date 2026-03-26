@@ -6,6 +6,7 @@ import WhyChooseUsSection from "./components/home/WhyChooseUsSection";
 import VisionMissionSection from "./components/home/VisionMissionSection";
 import DoctorsStaffSection from "./components/home/DoctorsStaffSection";
 import FaqSection from "./components/home/FaqSection";
+import HomeHelpCtaSection from "@/app/components/home/HomeHelpCtaSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <VisionMissionSection />
       <DoctorsStaffSection />
       <FaqSection />
+      <HomeHelpCtaSection />
     </>
   );
 }

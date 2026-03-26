@@ -290,6 +290,16 @@ export const faqItems = [
   },
 ];
 
+export const homeHelpCtaSection = {
+  leftTitle: "How Can We Help You Today?",
+  leftDescription:
+    "Our care team is here to support you with appointments, medical guidance, and emergency assistance whenever you need it.",
+  rightEyebrow: "GET STARTED",
+  rightTitle: "Book Your Care in 60 Seconds and Start Your Health Journey",
+  rightButtonLabel: "Contact Us",
+  rightButtonHref: "/contact",
+};
+
 export const stats = [
   { label: "Years Experience", value: 25, suffix: "+" },
   { label: "Happy Patients", value: 15000, suffix: "+" },

@@ -18,7 +18,7 @@ export default function VisionMissionSection() {
 
         <SlideIn
           direction="right"
-          className="border-x border-b border-primary/35 bg-surface-soft p-7 sm:px-8 lg:absolute lg:top-0 lg:right-50 lg:mt-0 lg:w-[30%] lg:rounded-b-2xl"
+          className="border-x border-b border-primary/35 bg-white p-10 sm:px-8 lg:absolute lg:top-0 lg:right-50 lg:mt-0 lg:w-[30%] lg:rounded-b-2xl"
         >
           <article>
             <div className="flex items-start gap-4">
