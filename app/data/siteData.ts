@@ -302,6 +302,50 @@ export const aboutTestimonialsSection = {
   ],
 };
 
+export const communityCommitmentSection = {
+  subtitle: "Community",
+  title: "Community Commitment",
+  description:
+    "We are dedicated to improving community health through education, accessible care, outreach support, and affordable medical services for everyone.",
+  cards: [
+    {
+      id: 1,
+      title: "Health Education For All",
+      description:
+        "Empowering communities with knowledge for healthier and better lives.",
+      icon: "/svgs/Community/Health_Education.svg",
+    },
+    {
+      id: 2,
+      title: "Support For Underserved Areas",
+      description:
+        "Bringing essential healthcare support to communities that need it most.",
+      icon: "/svgs/Community/Support.svg",
+    },
+    {
+      id: 3,
+      title: "Affordable & Transparent Pricing",
+      description:
+        "Making quality healthcare accessible with honest and clear pricing.",
+      icon: "/svgs/Community/Affordable_Pricing.svg",
+    },
+    {
+      id: 4,
+      title: "Mobile & Home Visit Services",
+      description:
+        "Providing convenient care and medical support at your doorstep.",
+      icon: "/svgs/Community/Home_Service.svg",
+    },
+    {
+      id: 5,
+      title: "Sustainable Health Programs",
+      description:
+        "Building long-term wellness through preventive and community-focused care.",
+      icon: "/svgs/Community/Health_Programs.svg",
+    },
+  ],
+};
+
 export const doctorsStaffSection = {
   subtitle: "Doctor & Staff",
   title: "Expert Doctor & Staff Team",
