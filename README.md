@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Isha Hospital Website
 
-## Getting Started
+Static hospital website built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Requirements
+
+- Node.js 20 or later
+- npm (comes with Node.js)
+- Git
+
+## Run This Project From GitHub
+
+1. Clone the repository:
+
+```bash
+git clone <your-github-repo-url>
+```
+
+2. Go into the project folder:
+
+```bash
+cd isha-hospital
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+- `npm run dev` - Start local development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server (after build)
+- `npm run lint` - Run ESLint checks
 
-To learn more about Next.js, take a look at the following resources:
+## Production Run (Local)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To test production mode on your PC:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+Then open:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- motion (animations)
+
+## Project Structure (Main)
+
+```text
+app/
+	page.tsx              # Home page
+	about/page.tsx        # About page
+	contact/page.tsx      # Contact page
+	components/           # Reusable UI sections/components
+	data/siteData.ts      # Centralized static content
+public/
+	images/               # Site images/assets
+```
+
+## Common Issues
+
+- Port already in use:
+
+```bash
+npm run dev -- -p 3001
+```
+
+- Clean install (if dependency issues happen):
+
+Windows PowerShell:
+
+```powershell
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+npm install
+```
+
+macOS/Linux:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
