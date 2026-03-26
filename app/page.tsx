@@ -5,6 +5,7 @@ import HomeProcessSection from "./components/home/HomeProcessSection";
 import WhyChooseUsSection from "./components/home/WhyChooseUsSection";
 import VisionMissionSection from "./components/home/VisionMissionSection";
 import DoctorsStaffSection from "./components/home/DoctorsStaffSection";
+import FaqSection from "./components/home/FaqSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUsSection />
       <VisionMissionSection />
       <DoctorsStaffSection />
+      <FaqSection />
     </>
   );
 }

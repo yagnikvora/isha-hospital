@@ -262,6 +262,34 @@ export const doctorsStaffSection = {
   ],
 };
 
+export const faqSection = {
+  subtitle: "FAQ",
+  title: "Need Answers? We're Here to Help",
+  description:
+    "Find quick answers to common questions about appointments, services, timings, and patient care to make your hospital visit easier and more convenient.",
+};
+
+export const faqItems = [
+  {
+    id: 1,
+    question: "Do I need to make an appointment before visiting?",
+    answer:
+      "While walk-ins may be accepted for some services, we recommend booking an appointment in advance to reduce waiting time and ensure doctor availability.",
+  },
+  {
+    id: 2,
+    question: "What are the operating hours of this hospital/clinic?",
+    answer:
+      "Our hospital is open during regular operating hours, with select departments and emergency services available beyond standard timings.",
+  },
+  {
+    id: 3,
+    question: "What medical services are offered here?",
+    answer:
+      "We provide a wide range of healthcare services including general consultation, diagnostics, specialist care, preventive check-ups, and treatment support.",
+  },
+];
+
 export const stats = [
   { label: "Years Experience", value: 25, suffix: "+" },
   { label: "Happy Patients", value: 15000, suffix: "+" },
