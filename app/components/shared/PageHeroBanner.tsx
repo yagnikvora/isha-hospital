@@ -17,7 +17,7 @@ export default function PageHeroBanner({
     <section className="relative mt-2 mx-2 overflow-hidden rounded-[1.1rem] bg-primary sm:mx-8 sm:rounded-[1.25rem] lg:mx-5 lg:rounded-[1.5rem]">
       <div className="absolute inset-0">
         <Image
-          src="/images/common/AboutUs_and_Contact_Us_Hero_Section_Background.png"
+          src="/images/common/AboutUs_and_Contact_Us_Hero_Section_Background.webp"
           alt="Hospital Ward Background"
           fill
           className="object-cover"

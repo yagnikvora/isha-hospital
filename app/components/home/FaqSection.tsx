@@ -7,7 +7,7 @@ import { faqItems, faqSection } from "@/app/data/siteData";
 import FadeIn from "../animations/FadeIn";
 
 const sectionBackgroundImage =
-    "/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.png";
+    "/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.webp";
 
 export default function FaqSection() {
     const [openItemId, setOpenItemId] = useState<number | null>(faqItems[0]?.id ?? null);

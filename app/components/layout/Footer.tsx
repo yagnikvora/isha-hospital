@@ -12,7 +12,7 @@ export default function Footer() {
       <footer className="bg-secondary pt-0 pb-3 sm:px-2 sm:pb-4">
         <div className="relative mx-2 overflow-hidden rounded-[14px] bg-primary text-text-light sm:mx-3">
         <Image
-          src="/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.png"
+          src="/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.webp"
           alt="Footer background"
           fill
           priority={false}

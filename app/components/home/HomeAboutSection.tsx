@@ -39,7 +39,7 @@ export default function HomeAboutSection() {
             <SlideIn direction="left" className="relative">
               <div className="relative h-[320px] sm:h-[380px] lg:h-[430px] rounded-[1.1rem] overflow-hidden">
                 <Image
-                  src="/images/common/Homepage_AboutUs_Section.png"
+                  src="/images/common/Homepage_AboutUs_Section.webp"
                   alt="Doctor providing compassionate care to a patient"
                   fill
                   className="object-cover"

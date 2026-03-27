@@ -27,7 +27,7 @@ export default function FindRightCare() {
             <div className="relative h-[160px] sm:h-[170px] md:h-[184px]">
               <div className="pointer-events-none absolute bottom-0 right-2 h-[210px] w-[192px] sm:h-[228px] sm:w-[208px] md:right-4 md:h-[266px] md:w-[244px]">
                 <Image
-                  src="/images/common/Homepage_HeroSection.png"
+                  src="/images/common/Homepage_HeroSection.webp"
                   alt="Doctor"
                   fill
                   className="object-contain object-bottom"

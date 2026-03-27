@@ -2,7 +2,7 @@ import Image from "next/image";
 import { aboutTestimonialsSection } from "@/app/data/siteData";
 
 const testimonialCardImage =
-  "/images/testimonials/AboutUs_Testimonial_Section_Background.png";
+  "/images/testimonials/AboutUs_Testimonial_Section_Background.webp";
 
 export default function TestimonialsSection() {
   return (

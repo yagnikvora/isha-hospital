@@ -10,7 +10,7 @@ import FadeIn from "../animations/FadeIn";
 import StaggerChildren, { staggerItem } from "../animations/StaggerChildren";
 
 const sectionBackgroundImage =
-  "/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.png";
+  "/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.webp";
 const leftFeatures = whyChooseUsFeatures.filter((feature) => feature.side === "left");
 const rightFeatures = whyChooseUsFeatures.filter(
   (feature) => feature.side === "right"
@@ -47,7 +47,7 @@ export default function WhyChooseUsSection() {
           <FadeIn className="relative z-10 mx-auto flex h-[340px] w-full max-w-[280px] items-end justify-center sm:h-[410px] sm:max-w-[340px] lg:h-[500px] lg:max-w-[390px] lg:justify-self-center">
             <div className="relative h-full w-full">
               <Image
-                src="/images/common/Homepage_HeroSection.png"
+                src="/images/common/Homepage_HeroSection.webp"
                 alt="Doctor standing confidently to represent trusted family healthcare"
                 fill
                 priority={false}

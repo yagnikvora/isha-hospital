@@ -60,7 +60,7 @@ export const services = [
     description:
       "Specialized cardiac diagnosis and treatment for better heart health.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Heart_Disease.png",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Heart_Disease.webp",
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ export const services = [
     description:
       "Expert respiratory care for healthy breathing and improved comfort.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Lung_Disease.jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Lung_Disease.webp",
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const services = [
     description:
       "Comprehensive liver treatment with advanced medical support.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Liver_Disease.jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Liver_Disease.webp",
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const services = [
     description:
       "Personalized solutions for blood disorders and related conditions.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Blood_Disease.jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Blood_Disease.webp",
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ export const services = [
     description:
       "Trusted neurological care for brain and nervous system health.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Brain_Disease.jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Brain_Disease.webp",
   },
   {
     id: 6,
@@ -100,7 +100,7 @@ export const services = [
     description:
       "Complete kidney treatment focused on long-term wellness and recovery.",
     image:
-      "/images/services/Homepage_Our_Medical_Treatments_Section_Kidney_Disease.jpg",
+      "/images/services/Homepage_Our_Medical_Treatments_Section_Kidney_Disease.webp",
   },
 ];
 
@@ -111,7 +111,7 @@ export const testimonials = [
     role: "Patient",
     quote:
       "The care I received at Isha Hospital was exceptional. The doctors and staff were incredibly attentive and made me feel comfortable throughout my treatment.",
-    image: "/images/testimonials/patient-1.jpg",
+    image: "/images/testimonials/patient-1.webp",
     rating: 5,
   },
   {
@@ -120,7 +120,7 @@ export const testimonials = [
     role: "Patient",
     quote:
       "I am grateful for the outstanding medical care at Isha Hospital. The facilities are modern, and the team is highly professional and caring.",
-    image: "/images/testimonials/patient-2.jpg",
+    image: "/images/testimonials/patient-2.webp",
     rating: 5,
   },
   {
@@ -129,7 +129,7 @@ export const testimonials = [
     role: "Patient",
     quote:
       "Isha Hospital exceeded my expectations. From diagnosis to treatment, everything was handled with precision and compassion. Highly recommend!",
-    image: "/images/testimonials/patient-3.jpg",
+    image: "/images/testimonials/patient-3.webp",
     rating: 5,
   },
 ];
@@ -370,12 +370,12 @@ export const doctorsStaffSection = {
     {
       name: "Dr. Kamal Bhatt",
       qualification: "M.D. Medicine",
-      image: "/images/doctors/Homepage_Doctor_Kamal_Bhatt.png",
+      image: "/images/doctors/Homepage_Doctor_Kamal_Bhatt.webp",
     },
     {
       name: "Dr. Sudhaben Bhatt",
       qualification: "M.D. Ayurveda",
-      image: "/images/doctors/Homepage_Doctor_Sudhaben_Bhatt.png",
+      image: "/images/doctors/Homepage_Doctor_Sudhaben_Bhatt.webp",
     },
   ],
 };
@@ -457,7 +457,7 @@ export const doctorProfile = {
   role: "Senior Consultant",
   description:
     "With over 20 years of experience in medical practice, Dr. Patel leads our team with expertise and compassion.",
-  image: "/images/doctors/doctor-profile.jpg",
+  image: "/images/doctors/doctor-profile.webp",
 };
 
 export const footerData = {

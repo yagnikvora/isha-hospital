@@ -2,7 +2,7 @@ import Image from "next/image";
 import { aboutOurValuesSection } from "@/app/data/siteData";
 
 const valuesBackgroundImage =
-  "/images/common/AboutUs_OurValue_Section_Background.png";
+  "/images/common/AboutUs_OurValue_Section_Background.webp";
 
 export default function OurValuesSection() {
   return (
