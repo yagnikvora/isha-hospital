@@ -3,6 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/layout/TopBar";
 import Footer from "./components/layout/Footer";
+import ScrollToTopOnRouteChange from "./components/shared/ScrollToTopOnRouteChange";
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -31,8 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${notoSans.variable} antialiased`}>
-      <body className="min-h-screen flex flex-col">
+    <html
+      lang="en"
+      className={`${notoSans.variable} antialiased`}
+      data-scroll-behavior="smooth"
+    >
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
+        <ScrollToTopOnRouteChange />
         <TopBar />
         <main className="flex-1">{children}</main>
         <Footer />

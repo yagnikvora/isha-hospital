@@ -6,9 +6,9 @@ import Navbar from "../layout/Navbar";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-primary mx-5 sm:mx-8 lg:mx-5 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
+    <section className="relative mt-2 mx-2 overflow-hidden rounded-[1.1rem] bg-primary sm:mx-8 sm:rounded-[1.25rem] lg:mx-5 lg:rounded-[1.5rem]">
       {/* Background image with overlay */}
-      <div className="absolute inset-0 rounded-[1.25rem] lg:rounded-[1.5rem] overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden rounded-[1.1rem] sm:rounded-[1.25rem] lg:rounded-[1.5rem]">
         <Image
           src="/images/common/Homepage_Hero_Section_Background.png"
           alt="Hospital Background"
@@ -24,10 +24,10 @@ export default function HeroSection() {
         <Navbar embedded />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 xl:gap-12 items-center pt-7 pb-0 lg:pt-10 lg:pb-0 min-h-[620px] lg:min-h-[670px] xl:min-h-[700px]">
+      <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-7">
+        <div className="grid min-h-[560px] grid-cols-1 items-center gap-7 pt-5 pb-0 lg:min-h-[670px] lg:grid-cols-2 lg:gap-10 lg:pt-10 lg:pb-0 xl:min-h-[700px] xl:gap-12">
           {/* Left Content */}
-          <div className="relative z-10 space-y-7 lg:space-y-10">
+          <div className="relative z-10 space-y-6 lg:space-y-10">
             <FadeIn>
               <div className="flex items-center gap-3">
                 <span className="text-secondary text-sm lg:text-base font-bold tracking-[0.25em] uppercase">
@@ -37,7 +37,7 @@ export default function HeroSection() {
             </FadeIn>
 
             <SlideIn direction="left" delay={0.2}>
-              <h1 className="text-[2.1rem] sm:text-[2.7rem] lg:text-[3.25rem] xl:text-[3.55rem] font-bold text-secondary leading-[1.15] max-w-[17.5ch] lg:max-w-none xl:max-w-none">
+              <h1 className="max-w-[17.5ch] text-[1.85rem] leading-[1.15] font-bold text-secondary sm:text-[2.7rem] lg:max-w-none lg:text-[3.25rem] xl:max-w-none xl:text-[3.55rem]">
                 <span className="lg:hidden">{heroData.title}</span>
                 <span className="hidden lg:block">
                   <span className="block whitespace-nowrap">We Are A Full Service</span>
@@ -48,7 +48,7 @@ export default function HeroSection() {
             </SlideIn>
 
             <FadeIn delay={0.3}>
-              <div className="flex items-center gap-4 sm:gap-6">
+              <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-6">
                 <div className="w-10 h-10 rounded-full bg-topbar-text flex items-center justify-center shrink-0 shadow-[0_8px_24px_rgba(227,30,37,0.35)]">
                   <svg
                     className="w-4 h-4 text-white"
@@ -64,7 +64,7 @@ export default function HeroSection() {
                     />
                   </svg>
                 </div>
-                <div className="grid grid-cols-2 gap-5 sm:gap-7 text-secondary">
+                <div className="grid w-full grid-cols-1 gap-4 text-secondary sm:w-auto sm:grid-cols-2 sm:gap-7">
                   <div>
                     <p className="text-xs sm:text-sm text-secondary/80 mb-1">Emergency Call</p>
                     <p className="text-[1.12rem] sm:text-[1.3rem] font-bold leading-tight">{contactInfo.phone}</p>
@@ -79,7 +79,7 @@ export default function HeroSection() {
 
             {/* Working Hours Card */}
             <FadeIn delay={0.4}>
-              <div className="mt-4 lg:mt-6 bg-white rounded-3xl p-6 lg:p-7 shadow-[0_10px_40px_rgba(0,0,0,0.12)] max-w-[360px] border border-gray-100">
+              <div className="mt-4 max-w-[360px] rounded-3xl border border-gray-100 bg-white p-5 shadow-[0_10px_40px_rgba(0,0,0,0.12)] lg:mt-6 lg:p-7">
                 <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-5">
                   Working Hours
                 </h3>
@@ -103,10 +103,10 @@ export default function HeroSection() {
           </div>
 
           {/* Right Content - Doctor Image */}
-          <SlideIn direction="right" delay={0.3} className="relative h-full flex items-end justify-center lg:justify-end lg:self-end">
-            <div className="relative w-full h-full max-w-[450px] lg:max-w-[490px] xl:max-w-[540px] flex items-end">
+          <SlideIn direction="right" delay={0.3} className="relative flex h-full items-end justify-center pt-1 lg:justify-end lg:self-end">
+            <div className="relative flex h-full w-full max-w-[450px] items-end lg:max-w-[490px] xl:max-w-[540px]">
               {/* Doctor Image */}
-              <div className="relative w-full h-[470px] sm:h-[520px] lg:h-[590px] xl:h-[640px] ml-4 lg:ml-8">
+              <div className="relative ml-0 h-[390px] w-full sm:h-[520px] lg:ml-8 lg:h-[590px] xl:h-[640px]">
                 <Image
                   src="/images/common/Homepage_HeroSection.png"
                   alt="Doctor at Isha Hospital"

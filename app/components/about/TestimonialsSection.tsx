@@ -6,13 +6,13 @@ const testimonialCardImage =
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-14">
+    <section className="py-12 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <header className="mx-auto max-w-xl text-center">
           <p className="text-[16px] font-semibold uppercase tracking-wide text-topbar-text">
             {aboutTestimonialsSection.subtitle}
           </p>
-          <h2 className="mt-3 text-[36px] font-bold text-text-primary">
+          <h2 className="mt-3 text-[30px] font-bold text-text-primary sm:text-[36px]">
             {aboutTestimonialsSection.title}
           </h2>
           <p className="mx-auto mt-3 text-[14px] text-text-secondary">
@@ -20,12 +20,12 @@ export default function TestimonialsSection() {
           </p>
         </header>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-4 lg:gap-5">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 md:grid-cols-3 md:gap-4 lg:gap-5">
           {aboutTestimonialsSection.cards.map((card) => {
             return (
               <article key={card.id} className="group">
                 <div
-                  className="relative overflow-hidden rounded-[16px] border border-border-light bg-accent p-7 pb-8 text-center text-text-primary transition-all duration-300 hover:-translate-y-1"
+                  className="relative overflow-hidden rounded-[16px] border border-border-light bg-accent p-5 pb-6 text-center text-text-primary transition-all duration-300 hover:-translate-y-1 sm:p-7 sm:pb-8"
                   style={{ minHeight: "300px" }}
                 >
                   <Image

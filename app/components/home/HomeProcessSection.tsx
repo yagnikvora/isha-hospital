@@ -18,17 +18,17 @@ export default function HomeProcessSection() {
             <p className="text-[15px] font-semibold uppercase text-topbar-text">
                 Process
             </p>
-            <h2 className="mt-3 text-[35px] font-bold leading-[1.2] text-text-primary">
+            <h2 className="mt-3 text-[30px] font-bold leading-[1.2] text-text-primary sm:text-[35px]">
               Take Control of Your Health with Our Simple Care Process
             </h2>
-            <p className="mt-4 text-[14px] text-text-secondary">
+            <p className="mt-4 text-[14px] leading-[1.7] text-text-secondary">
               We make your healthcare journey smooth, supportive, and
               stress-free. From your first consultation to recovery planning,
               our team follows a clear and patient-focused process to deliver
               the right care at every step.
             </p>
 
-            <div className="relative mt-8 h-[210px] w-full max-w-[560px] self-center sm:h-[240px] lg:mt-8 lg:h-[265px] lg:self-start">
+            <div className="relative mt-7 h-[190px] w-full max-w-[560px] self-center sm:h-[240px] lg:mt-8 lg:h-[265px] lg:self-start">
               <Image
                 src="/images/common/Homepage_Contact_Us_Process_Section.png"
                 alt="Medical team supporting patient care process"
@@ -46,7 +46,7 @@ export default function HomeProcessSection() {
                   key={step.step}
                   variants={staggerItem}
                   whileHover={{ y: -5, transition: { duration: 0.22 } }}
-                  className="group relative aspect-[1/1] overflow-hidden rounded-[1rem] border border-border bg-secondary p-5 text-text-primary transition-colors duration-300 hover:border-topbar-text hover:text-text-light"
+                  className="group relative min-h-[176px] overflow-hidden rounded-[1rem] border border-border bg-secondary p-4 text-text-primary transition-colors duration-300 hover:border-topbar-text hover:text-text-light sm:p-5 lg:aspect-[1/1] lg:min-h-[220px]"
                 >
                   <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <Image
@@ -62,13 +62,13 @@ export default function HomeProcessSection() {
 
                   <div className="relative flex h-full flex-col">
                     <div className="flex items-center gap-2">
-                      <span className="text-[38px] font-bold leading-none text-topbar-text transition-colors duration-300 group-hover:text-text-light/90">
+                      <span className="text-[32px] font-bold leading-none text-topbar-text transition-colors duration-300 group-hover:text-text-light/90 sm:text-[38px]">
                         {String(step.step).padStart(2, "0")}
                       </span>
                       <span className="h-[2px] w-12 bg-topbar-text transition-colors duration-300 group-hover:bg-text-light/90" />
                     </div>
 
-                    <h3 className="mt-4 text-[18px] font-bold">
+                    <h3 className="mt-4 text-[17px] font-bold sm:text-[18px]">
                       {step.title}
                     </h3>
                     <p className="mt-2 text-[13px] leading-[1.65] text-text-secondary transition-colors duration-300 group-hover:text-text-light/90">

@@ -61,11 +61,11 @@ export default function ContactInfo() {
           Contact Us
         </span>
 
-        <h2 className="mb-5 text-[38px] font-bold leading-[1.12] text-text-primary lg:whitespace-nowrap">
+        <h2 className="mb-5 text-[30px] font-bold leading-[1.12] text-text-primary sm:text-[38px] lg:whitespace-nowrap">
           Feel Free To Contact Us
         </h2>
 
-        <p className="mb-8 text-[16px] leading-relaxed text-text-secondary">
+        <p className="mb-8 text-[15px] leading-relaxed text-text-secondary sm:text-[16px]">
           Contact our team for appointments, assistance,
           <br />
           and trusted medical support.
@@ -80,7 +80,7 @@ export default function ContactInfo() {
               <WorkingHoursIcon />
               <div>
                 <p className="text-[14px] leading-none text-text-secondary">Morning</p>
-                <p className="mt-1.5 text-[20px] font-bold leading-none text-text-primary md:text-[18px]">
+                <p className="mt-1.5 text-[18px] font-bold leading-none text-text-primary sm:text-[20px] md:text-[18px]">
                   {contactInfo.workingHours.morning}
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function ContactInfo() {
               <WorkingHoursIcon />
               <div>
                 <p className="text-[14px] leading-none text-text-secondary">Evening</p>
-                <p className="mt-1.5 text-[20px] font-bold leading-none text-text-primary md:text-[18px]">
+                <p className="mt-1.5 text-[18px] font-bold leading-none text-text-primary sm:text-[20px] md:text-[18px]">
                   {contactInfo.workingHours.evening}
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function ContactInfo() {
               <PhoneNumberIcon />
               <div>
                 <p className="text-[14px] leading-none text-text-secondary">Phone Number</p>
-                <p className="mt-1.5 text-[20px] font-bold leading-none text-text-primary md:text-[18px]">
+                <p className="mt-1.5 text-[18px] font-bold leading-none text-text-primary sm:text-[20px] md:text-[18px]">
                   {contactInfo.phone}
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function ContactInfo() {
               <EmailIcon />
               <div>
                 <p className="text-[14px] leading-none text-text-secondary">Send Us Email</p>
-                <p className="mt-1.5 text-[20px] font-bold leading-none text-text-primary md:text-[18px]">
+                <p className="mt-1.5 break-all text-[18px] font-bold leading-none text-text-primary sm:text-[20px] md:text-[18px]">
                   {contactInfo.email}
                 </p>
               </div>

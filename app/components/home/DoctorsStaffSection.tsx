@@ -4,22 +4,25 @@ import FadeIn from "../animations/FadeIn";
 
 export default function DoctorsStaffSection() {
   return (
-    <section className="pb-7 sm:pt-10 lg:pt-20">
+    <section className="pt-8 pb-7 sm:pt-10 lg:pt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="mx-auto flex max-w-[720px] flex-wrap items-center justify-center gap-x-9 gap-y-5 sm:gap-x-12">
+          <div className="mx-auto grid max-w-[860px] grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5">
             {doctorsStaffSection.highlights.map((highlight) => (
-              <div key={highlight.label} className="flex items-center gap-7">
+              <div
+                key={highlight.label}
+                className="mx-auto flex w-full max-w-[250px] items-center justify-center gap-4 sm:max-w-none sm:justify-center sm:gap-5"
+              >
                   <Image
                     src={highlight.icon}
                     alt=""
                     aria-hidden="true"
                     width={24}
                     height={24}
-                    className="h-15 w-15 object-contain"
+                    className="h-12 w-12 object-contain sm:h-15 sm:w-15"
                   />
-                <div>
-                  <p className="text-[30px] font-bold text-text-primary">
+                <div className="min-w-[128px]">
+                  <p className="text-[24px] font-bold text-text-primary sm:text-[30px]">
                     {highlight.value}
                   </p>
                   <p className="mt-1 text-[13px] text-text-secondary">
@@ -31,11 +34,11 @@ export default function DoctorsStaffSection() {
           </div>
         </FadeIn>
 
-        <FadeIn className="mt-20 text-center">
+        <FadeIn className="mt-14 text-center sm:mt-20">
           <p className="text-[16px] font-bold uppercase tracking-wide text-topbar-text">
             {doctorsStaffSection.subtitle}
           </p>
-          <h2 className="mt-3 text-[35px] font-bold leading-tight text-text-primary">
+          <h2 className="mt-3 text-[30px] font-bold leading-tight text-text-primary sm:text-[35px]">
             {doctorsStaffSection.title}
           </h2>
         </FadeIn>

@@ -43,6 +43,21 @@ export default function ContactForm() {
       `${formData.name}`,
     ].join("\n");
 
+    const mailtoUrl =
+      `mailto:${contactInfo.email}` +
+      `?subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
+
+    const isMobileDevice = /Android|iPhone|iPad|iPod|Mobile/i.test(
+      navigator.userAgent
+    );
+
+    // On mobile, prefer the native mail app chooser (includes Gmail app when installed).
+    if (isMobileDevice) {
+      window.location.href = mailtoUrl;
+      return;
+    }
+
     const gmailComposeUrl =
       `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contactInfo.email)}` +
       `&su=${encodeURIComponent(subject)}` +
@@ -50,10 +65,6 @@ export default function ContactForm() {
 
     const openedWindow = window.open(gmailComposeUrl, "_blank", "noopener,noreferrer");
     if (!openedWindow) {
-      const mailtoUrl =
-        `mailto:${contactInfo.email}` +
-        `?subject=${encodeURIComponent(subject)}` +
-        `&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoUrl;
     }
   };
@@ -64,8 +75,8 @@ export default function ContactForm() {
 
   return (
     <SlideIn direction="right">
-      <div className="rounded-3xl bg-contact-card-bg p-8 shadow-[0_16px_45px_var(--color-contact-shadow)] md:p-11">
-        <h3 className="mb-8 text-3xl font-bold leading-none text-text-primary">
+      <div className="rounded-3xl bg-contact-card-bg p-5 shadow-[0_16px_45px_var(--color-contact-shadow)] sm:p-8 md:p-11">
+        <h3 className="mb-7 text-[28px] font-bold leading-none text-text-primary sm:mb-8 sm:text-3xl">
           Send Us Email
         </h3>
 
@@ -146,7 +157,7 @@ export default function ContactForm() {
           <div className="pt-1">
             <button
               type="submit"
-              className="inline-flex items-center gap-3 rounded-full bg-topbar-text px-9 py-3 text-base font-semibold text-text-light transition duration-200 hover:bg-primary"
+              className="inline-flex items-center gap-3 rounded-full bg-topbar-text px-7 py-3 text-[15px] font-semibold text-text-light transition duration-200 hover:bg-primary sm:px-9 sm:text-base"
             >
               Send Mail
               <svg

@@ -33,8 +33,8 @@ function MetricSvg({ icon }: { icon: MetricIcon }) {
 export default function HomeAboutSection() {
   return (
     <section className="py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-[1.5rem] bg-secondary p-4 md:p-6 lg:p-7">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-[1.5rem] bg-secondary p-3 sm:p-4 md:p-6 lg:p-7">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-15 items-center">
             <SlideIn direction="left" className="relative">
               <div className="relative h-[320px] sm:h-[380px] lg:h-[430px] rounded-[1.1rem] overflow-hidden">
@@ -47,9 +47,9 @@ export default function HomeAboutSection() {
                 />
               </div>
 
-              <div className="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-6 z-10 bg-secondary border border-border rounded-2xl p-7 shadow-lg">
+              <div className="absolute right-3 bottom-3 left-3 z-10 rounded-2xl border border-border bg-secondary p-4 shadow-lg sm:right-6 sm:bottom-4 sm:left-6 sm:p-7">
                 <div className="flex items-start gap-4">
-                  <div className="w-13 h-19 text-topbar-text flex items-center justify-center shrink-0">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center text-topbar-text sm:h-19 sm:w-13">
                     <Image
                       src="/Meds.svg"
                       alt=""
@@ -60,8 +60,8 @@ export default function HomeAboutSection() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-[24px] font-bold text-text-primary">{homeAboutSection.feature.title}</h3>
-                    <p className="text-[14px] text-text-secondary mt-1.5 leading-relaxed">{homeAboutSection.feature.description}</p>
+                    <h3 className="text-[20px] font-bold text-text-primary sm:text-[24px]">{homeAboutSection.feature.title}</h3>
+                    <p className="mt-1.5 text-[13px] leading-relaxed text-text-secondary sm:text-[14px]">{homeAboutSection.feature.description}</p>
                   </div>
                 </div>
               </div>
@@ -71,18 +71,18 @@ export default function HomeAboutSection() {
               <p className="text-topbar-text font-semibold uppercase text-[16px]">
                 {homeAboutSection.subtitle}
               </p>
-              <h2 className="mt-3 text-[38px] md:text-[2rem] font-bold  max-w-[25ch]">
+              <h2 className="mt-3 max-w-[25ch] text-[30px] font-bold md:text-[2rem]">
                 {homeAboutSection.title}
               </h2>
-              <p className="mt-4 text-[16px] text-text-secondary leading-relaxed sm:text-base max-w-[60ch]">
+              <p className="mt-4 max-w-[60ch] text-[15px] leading-relaxed text-text-secondary sm:text-base">
                 {homeAboutSection.description}
               </p>
 
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-5">
+              <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5">
                 {homeAboutSection.metrics.map((metric) => (
                   <div
                     key={metric.title}
-                    className="h-45 group rounded-2xl border border-border bg-accent p-4 sm:p-5 text-text-primary transition duration-300 hover:bg-topbar-text hover:text-text-light hover:border-transparent"
+                    className="group min-h-40 rounded-2xl border border-border bg-accent p-4 text-text-primary transition duration-300 hover:border-transparent hover:bg-topbar-text hover:text-text-light sm:min-h-45 sm:p-5"
                   >
                     <div className="flex items-center justify-between gap-3">
                       <MetricSvg icon={metric.icon as MetricIcon} />

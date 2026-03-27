@@ -14,7 +14,8 @@ export default function FindRightCare() {
 
               <Link
                 href="/contact"
-                className="mt-6 inline-flex min-w-[168px] items-center justify-center gap-4 rounded-full bg-topbar-text px-7 py-2.5 text-[12px] font-semibold text-white transition-colors hover:bg-primary-dark"
+                 scroll
+                 className="mt-6 inline-flex min-w-[168px] items-center justify-center gap-4 rounded-full bg-topbar-text px-7 py-2.5 text-[12px] font-semibold text-white transition-colors hover:bg-primary-dark"
               >
                 <span>Contact Us</span>
                 <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

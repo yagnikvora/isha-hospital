@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <>
       <FindRightCare />
-      <footer className="bg-secondary pb-3 pt-0 sm:px-2 sm:pb-4">
-        <div className="relative mx-3 overflow-hidden rounded-[14px] bg-primary text-text-light">
+      <footer className="bg-secondary pt-0 pb-3 sm:px-2 sm:pb-4">
+        <div className="relative mx-2 overflow-hidden rounded-[14px] bg-primary text-text-light sm:mx-3">
         <Image
           src="/images/common/Footer_and_Faq_and_Why_Choose_Us_background_Image.png"
           alt="Footer background"
@@ -24,10 +24,10 @@ export default function Footer() {
           style={{ backgroundColor: "var(--color-image-tint)", opacity: 0.20 }}
         />
 
-          <div className="relative mx-auto max-w-[1060px] px-5 pb-4 pt-[152px] sm:px-8 sm:pt-[158px] lg:px-10 lg:pt-[170px]">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.45fr_1fr_1fr_0.8fr] lg:gap-7">
+          <div className="relative mx-auto max-w-[1060px] px-4 pb-4 pt-[130px] sm:px-8 sm:pt-[158px] lg:px-10 lg:pt-[170px]">
+          <div className="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-[1.45fr_1fr_1fr_0.8fr] lg:gap-7">
             <SlideIn direction="left" delay={0.05}>
-              <div>
+              <div className="min-w-0">
                 <Link href="/" className="inline-flex items-center">
                   <Image
                     src="/Logo.svg"
@@ -37,14 +37,14 @@ export default function Footer() {
                     className="h-auto w-[170px] sm:w-[182px]"
                   />
                 </Link>
-                <p className="mt-7 max-w-[300px] text-[11.5px] leading-7 text-white/85">
+                <p className="mt-6 max-w-[300px] text-[12.5px] leading-7 text-white/85 sm:mt-7 sm:text-[11.5px]">
                   {footerData.description}
                 </p>
               </div>
             </SlideIn>
 
             <FadeIn delay={0.12}>
-              <div>
+              <div className="min-w-0">
                 <h3 className="text-[23px] font-semibold leading-none">Contact Us</h3>
                 <div className="mt-6 space-y-5">
                   <div className="flex items-start gap-3">
@@ -69,7 +69,7 @@ export default function Footer() {
                         />
                       </svg>
                     </span>
-                    <p className="max-w-[236px] text-[11.5px] leading-7 text-white/90">
+                    <p className="max-w-[236px] text-[12.5px] leading-7 text-white/90 sm:text-[11.5px]">
                       {contactInfo.address}
                     </p>
                   </div>
@@ -91,10 +91,10 @@ export default function Footer() {
                       </svg>
                     </span>
                     <div>
-                      <p className="text-[11.5px] leading-6 text-white/90">For Emergency Call</p>
+                      <p className="text-[12.5px] leading-6 text-white/90 sm:text-[11.5px]">For Emergency Call</p>
                       <a
                         href={`tel:${contactInfo.phone.replace(/\s+/g, "")}`}
-                        className="mt-1 inline-block text-[23px] font-semibold leading-none text-white"
+                        className="mt-1 inline-block break-words text-[23px] font-semibold leading-none text-white"
                       >
                         {contactInfo.phone}
                       </a>
@@ -105,7 +105,7 @@ export default function Footer() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div>
+              <div className="min-w-0">
                 <h3 className="text-[23px] font-semibold leading-none">Our Treatments</h3>
                 <ul className="mt-6 space-y-[14px]">
                   {footerData.treatments.map((treatment, index) => (
@@ -113,7 +113,7 @@ export default function Footer() {
                       <FadeIn delay={0.24 + index * 0.05} duration={0.45} direction="none">
                         <button
                           type="button"
-                          className="group inline-flex items-center text-left text-[11.5px] leading-none text-white/90 transition-colors hover:text-white"
+                          className="group inline-flex items-center text-left text-[12.5px] leading-none text-white/90 transition-colors hover:text-white sm:text-[11.5px]"
                         >
                           <span>{treatment}</span>
                         </button>
@@ -125,7 +125,7 @@ export default function Footer() {
             </FadeIn>
 
             <SlideIn direction="right" delay={0.2}>
-              <div>
+              <div className="min-w-0">
                 <h3 className="text-[23px] font-semibold leading-none">Quick Links</h3>
                 <ul className="mt-6 space-y-[14px]">
                   {footerData.quickLinks.slice(0, 3).map((link, index) => (
@@ -133,7 +133,8 @@ export default function Footer() {
                       <FadeIn delay={0.24 + index * 0.06} duration={0.45} direction="none">
                         <Link
                           href={link.href}
-                          className="text-[11.5px] leading-none text-white/90 transition-colors hover:text-white"
+                          scroll
+                          className="text-[12.5px] leading-none text-white/90 transition-colors hover:text-white sm:text-[11.5px]"
                         >
                           {link.label}
                         </Link>

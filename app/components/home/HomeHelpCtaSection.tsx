@@ -5,11 +5,11 @@ import { contactInfo, homeHelpCtaSection } from "@/app/data/siteData";
 
 export default function HomeHelpCtaSection() {
 	return (
-		<section className="bg-secondary pb-14 pt-0 sm:pb-16 lg:pb-20">
+		<section className="bg-secondary pb-12 pt-0 sm:pb-16 lg:pb-20">
 			<div className="bg-primary">
 				<div className="relative mx-auto max-w-[1260px] px-4 sm:px-6 lg:h-[300px] lg:px-10">
-					<FadeIn className="rounded-b-2xl border-x border-b border-primary/35 bg-white p-10 lg:absolute lg:left-8 lg:top-0 lg:z-20 lg:h-[350px] lg:w-[34%] lg:p-12">
-						<h3 className="text-[25px] font-bold leading-[1.18] text-text-primary">
+					<FadeIn className="rounded-b-2xl border-x border-b border-primary/35 bg-white p-6 sm:p-8 lg:absolute lg:left-8 lg:top-0 lg:z-20 lg:h-[350px] lg:w-[34%] lg:p-12">
+						<h3 className="text-[22px] font-bold leading-[1.18] text-text-primary sm:text-[25px]">
 							{homeHelpCtaSection.leftTitle}
 						</h3>
 
@@ -64,16 +64,17 @@ export default function HomeHelpCtaSection() {
 						</div>
 					</FadeIn>
 
-					<FadeIn className="px-1 pb-10 pt-10 text-text-light sm:px-2 sm:pb-12 sm:pt-12 lg:ml-[44%] lg:px-0 lg:pt-14">
+					<FadeIn className="px-1 pb-10 pt-8 text-text-light sm:px-2 sm:pb-12 sm:pt-12 lg:ml-[44%] lg:px-0 lg:pt-14">
 						<p className="text-[14px] font-semibold tracking-wide text-text-light/90">
 							{homeHelpCtaSection.rightEyebrow}
 						</p>
-						<h2 className="mt-3 max-w-[28ch] text-[30px] font-bold leading-[1.2] text-text-light">
+						<h2 className="mt-3 max-w-[28ch] text-[26px] font-bold leading-[1.2] text-text-light sm:text-[30px]">
 							{homeHelpCtaSection.rightTitle}
 						</h2>
 						<Link
 							href={homeHelpCtaSection.rightButtonHref}
-							className="mt-8 inline-flex min-w-[210px] items-center justify-center gap-4 rounded-full bg-secondary px-7 py-3 text-[16px] font-semibold text-topbar-text transition-colors duration-300 hover:bg-accent"
+							scroll
+							className="mt-7 inline-flex min-w-[190px] items-center justify-center gap-4 rounded-full bg-secondary px-6 py-3 text-[15px] font-semibold text-topbar-text transition-colors duration-300 hover:bg-accent sm:mt-8 sm:min-w-[210px] sm:px-7 sm:text-[16px]"
 						>
 							<span>{homeHelpCtaSection.rightButtonLabel}</span>
 							<svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">

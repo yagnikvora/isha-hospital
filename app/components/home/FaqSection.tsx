@@ -17,7 +17,7 @@ export default function FaqSection() {
     };
 
     return (
-        <section className="relative overflow-hidden bg-accent py-20">
+        <section className="relative overflow-hidden bg-accent py-12 sm:py-16 lg:py-20">
             <Image
                 src={sectionBackgroundImage}
                 alt=""
@@ -32,7 +32,7 @@ export default function FaqSection() {
                     <p className="text-[16px] font-semibold uppercase tracking-wide text-topbar-text">
                         {faqSection.subtitle}
                     </p>
-                    <h2 className="mt-3 text-[38px] font-bold text-text-primary">
+                    <h2 className="mt-3 text-[30px] font-bold text-text-primary sm:text-[38px]">
                         {faqSection.title}
                     </h2>
                     <p className="mt-5 max-w-[54ch] text-[15px] leading-[1.9] text-text-secondary">
@@ -40,7 +40,7 @@ export default function FaqSection() {
                     </p>
                 </FadeIn>
 
-                <FadeIn className="space-y-4 min-h-[22rem] sm:min-h-[25rem] lg:min-h-[23rem]">
+                <FadeIn className="space-y-3.5 min-h-[20rem] sm:space-y-4 sm:min-h-[25rem] lg:min-h-[23rem]">
                     {faqItems.map((item, index) => {
                         const isOpen = openItemId === item.id;
 
@@ -53,14 +53,14 @@ export default function FaqSection() {
                                     type="button"
                                     onClick={() => handleToggle(item.id)}
                                     aria-expanded={isOpen}
-                                    className={`flex w-full items-center justify-between px-5 py-[17px] text-left transition-colors duration-300 sm:px-6 ${isOpen ? "bg-primary text-text-light" : "bg-secondary text-text-primary"
+                                    className={`flex w-full items-center justify-between px-4 py-[15px] text-left transition-colors duration-300 sm:px-6 sm:py-[17px] ${isOpen ? "bg-primary text-text-light" : "bg-secondary text-text-primary"
                                         }`}
                                 >
-                                    <span className="pr-3 text-[15px] font-bold">
+                                    <span className="pr-3 text-[14px] font-bold sm:text-[15px]">
                                         {index + 1}. {item.question}
                                     </span>
                                     <span
-                                        className={`relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] transition-colors duration-300 ${isOpen ? "bg-topbar-text" : "bg-primary"
+                                        className={`relative inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[12px] transition-colors duration-300 sm:h-10 sm:w-10 ${isOpen ? "bg-topbar-text" : "bg-primary"
                                             }`}
                                         aria-hidden="true"
                                     >
@@ -82,7 +82,7 @@ export default function FaqSection() {
                                             transition={{ duration: 0.32, ease: "easeInOut" }}
                                             className="overflow-hidden"
                                         >
-                                            <div className="px-5 py-6 sm:px-6">
+                                            <div className="px-4 py-5 sm:px-6 sm:py-6">
                                                 <p className="text-[14px] leading-[1.9] text-text-secondary">
                                                     {item.answer}
                                                 </p>

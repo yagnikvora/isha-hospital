@@ -14,7 +14,7 @@ export default function PageHeroBanner({
   breadcrumbs,
 }: PageHeroBannerProps) {
   return (
-    <section className="relative bg-primary overflow-hidden mx-2 sm:mx-8 lg:mx-5 mt-2 rounded-[1.25rem] lg:rounded-[1.5rem]">
+    <section className="relative mt-2 mx-2 overflow-hidden rounded-[1.1rem] bg-primary sm:mx-8 sm:rounded-[1.25rem] lg:mx-5 lg:rounded-[1.5rem]">
       <div className="absolute inset-0">
         <Image
           src="/images/common/AboutUs_and_Contact_Us_Hero_Section_Background.png"
@@ -31,12 +31,12 @@ export default function PageHeroBanner({
         <Navbar embedded />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-20 md:py-24 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-4">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-14 text-center sm:py-20 md:py-24">
+        <h1 className="mb-4 text-3xl font-bold text-secondary sm:text-4xl md:text-5xl">
           {title}
         </h1>
         {description && (
-          <p className="max-w-xl mx-auto text-secondary/85 text-sm md:text-base leading-relaxed mb-5">
+          <p className="mx-auto mb-5 max-w-xl text-secondary/85 text-sm leading-relaxed md:text-base">
             {description}
           </p>
         )}

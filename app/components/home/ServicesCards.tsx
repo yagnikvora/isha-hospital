@@ -9,12 +9,12 @@ export default function ServicesCards() {
   return (
     <section id="services" className="py-10">
       <div className="px-4">
-        <div className="rounded-[1rem] bg-accent p-5 md:p-8 lg:px-60 lg:py-30">
+        <div className="rounded-[1rem] bg-accent p-4 sm:p-5 md:p-8 lg:px-60 lg:py-30">
           <div className="text-center">
             <p className="text-topbar-text text-[16px] sm:text-sm font-semibold uppercase">
               Services
             </p>
-            <h2 className="mt-3 text-[33px] font-bold text-text-primary">
+            <h2 className="mt-3 text-[29px] font-bold text-text-primary sm:text-[33px]">
               Our Medical Treatments
             </h2>
           </div>
@@ -37,8 +37,8 @@ export default function ServicesCards() {
                   />
                 </div>
 
-                <div className="relative px-10 pb-6 pt-20 text-center">
-                  <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-[85%] rounded-xl bg-primary px-3 py-7 text-center text-text-light font-semibold shadow-[0_12px_20px_var(--color-contact-shadow)] transition-colors duration-300 group-hover:bg-topbar-text">
+                <div className="relative px-5 pb-5 pt-18 text-center sm:px-10 sm:pb-6 sm:pt-20">
+                  <div className="absolute -top-7 left-1/2 w-[88%] -translate-x-1/2 rounded-xl bg-primary px-3 py-5 text-center font-semibold text-text-light shadow-[0_12px_20px_var(--color-contact-shadow)] transition-colors duration-300 group-hover:bg-topbar-text sm:w-[85%] sm:py-7">
                     {service.title}
                   </div>
                   <p className="text-sm leading-relaxed text-text-secondary">

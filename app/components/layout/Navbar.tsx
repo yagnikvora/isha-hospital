@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { navLinks } from "@/app/data/siteData";
 
 type NavbarProps = {
@@ -37,7 +38,7 @@ export default function Navbar({ embedded = false, className = "" }: NavbarProps
   return (
     <nav className={`${navClass} ${className}`.trim()}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
-        <div className="flex justify-between items-center h-[74px] lg:h-[76px]">
+        <div className="flex h-[68px] items-center justify-between lg:h-[76px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -45,7 +46,7 @@ export default function Navbar({ embedded = false, className = "" }: NavbarProps
               alt="Isha Hospital Logo"
               width={280}
               height={92}
-              className="h-14 md:h-[4.25rem] w-auto"
+              className="h-12 w-auto md:h-[4.25rem]"
               priority
             />
           </Link>
@@ -113,45 +114,71 @@ export default function Navbar({ embedded = false, className = "" }: NavbarProps
       </div>
 
       {/* Mobile Menu */}
-      {mobileOpen && (
-        <div
-          className={`md:hidden border-t ${
-            embedded
-              ? "bg-primary/95 backdrop-blur-sm border-secondary/20"
-              : "bg-secondary border-border"
-          }`}
-        >
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className={`block py-2 text-sm font-medium ${
-                  pathname === link.href
-                    ? embedded
-                      ? "text-secondary"
-                      : "text-primary"
-                    : embedded
-                      ? "text-text-light"
-                      : "text-text-secondary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            {!isContactPage && (
-              <Link
-                href="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="block bg-topbar-text text-text-light px-7 py-3 rounded-full text-sm font-semibold text-center mt-4"
-              >
-                Get In Touch
-              </Link>
-            )}
-          </div>
-        </div>
-      )}
+      <AnimatePresence initial={false}>
+        {mobileOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.28, ease: "easeInOut" }}
+            className={`md:hidden overflow-hidden border-t ${
+              embedded
+                ? "bg-secondary/94 backdrop-blur-md border-secondary/40"
+                : "bg-secondary border-border"
+            }`}
+          >
+            <motion.div
+              className="space-y-2 px-4 py-4"
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              variants={{
+                hidden: { transition: { staggerChildren: 0.04, staggerDirection: -1 } },
+                show: { transition: { staggerChildren: 0.06 } },
+              }}
+            >
+              {navLinks.map((link) => (
+                <motion.div
+                  key={link.href}
+                  variants={{
+                    hidden: { opacity: 0, y: -6 },
+                    show: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`block rounded-xl px-3 py-2 text-sm font-medium transition-colors ${
+                      pathname === link.href
+                        ? "bg-primary/10 text-primary"
+                        : "text-text-secondary hover:bg-primary/5 hover:text-primary"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+
+              {!isContactPage && (
+                <motion.div
+                  variants={{ hidden: { opacity: 0, y: -6 }, show: { opacity: 1, y: 0 } }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Link
+                    href="/contact"
+                    onClick={() => setMobileOpen(false)}
+                    className="mt-3 block rounded-full bg-topbar-text px-7 py-3 text-center text-sm font-semibold text-text-light transition-colors hover:bg-primary"
+                  >
+                    Get In Touch
+                  </Link>
+                </motion.div>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
